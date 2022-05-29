@@ -1,0 +1,144 @@
+:root{
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+    background-image: url('/img/fundo.jpg');
+    background-size:contain;
+    
+
+    /*sombra da borda, 1o=sombra esquerda, 2o=sombra cima, 3o=blur*/
+    /*Colocando sinal de menos, inverte os lados*/
+    box-shadow: inset 15px 70px 70px #000000,
+                inset -50px -430px 80px #0f0f0f;
+    
+
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /*vertical*/
+    /*justify-content: space-between; /*horizontal*/
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(39, 39, 39, 0.5) 20%);*/
+    background: transparent;
+    margin-left: 9px;
+
+}
+
+header .box-img-logo{
+    align-items: flex-start;
+    justify-content: left;
+    margin-top: 5px;
+    margin-right: 30px;
+   
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+
+header div .nav2{
+    align-items: flex-end;
+    justify-content: right;
+    margin-left: 700px;
+    word-spacing: 15px;
+}
+
+
+
+/*filme principal começa aqui*/
+.filme-principal{
+    font-size: 16px;
+    /*background: linear-gradient(rgba(0,0,0,.50), rgba(43, 42, 42, 0.5)20%);
+            /*gradiente sempre vai exigir duas cores e a porcentagem de cobertura*/
+    height: 600px;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+        /*tranformou os nomes e botoes em colunas*/
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-left: 15px;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    
+}
+
+.titulo{
+    font-size: 40px;
+    margin-left: 15px;
+    margin-top: 250px;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    font-size: 13px;
+    background-color: rgba(231, 231, 231);
+    border: none;
+    border-radius: 5px;
+    color: rgb(22, 22, 22);
+    padding: 15px 30px;
+    margin-left: 15px;
+    cursor: pointer;
+        /*muda o cursor do mouse quando este passa por cima*/
+    transition: .3s ease all;
+        /*dá um pequeno delay na animação que faz o botao mudar de cor*/
+}
+
+.botao:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border-radius: 5px;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.filme-principal .container{
+    width: 90%;
+    /*na responsividade, deixa uma borda pequena, de acordo como tamanho da tela*/
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    padding: 3%;
+    
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+    
+}
+
+
+
